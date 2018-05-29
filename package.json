@@ -1,0 +1,35 @@
+{
+  "name": "dublin.serverlessdays.io",
+  "version": "1.0.0",
+  "description": "Website for ServerlessDays Dublin",
+  "scripts": {
+    "test": "echo 'Well... we will do it live for now'",
+    "clean": "rm -rf build",
+    "build": "npm run clean && mkdir -p build && cp src/public/* build/",
+    "publish": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serverlessdays-dublin/dublin.serverlessdays.io.git"
+  },
+  "keywords": [
+    "Serverless",
+    "Conference",
+    "Website"
+  ],
+  "author": [
+    {
+      "name": "Luciano Mammino",
+      "email": "luciano@fullstackbulletin.com",
+      "url": "https://loige.co"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/serverlessdays-dublin/dublin.serverlessdays.io/issues"
+  },
+  "homepage": "https://github.com/serverlessdays-dublin/dublin.serverlessdays.io#readme",
+  "devDependencies": {
+    "gh-pages": "^1.1.0"
+  }
+}
