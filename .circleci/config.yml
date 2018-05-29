@@ -18,6 +18,8 @@ jobs:
           - v1-dependencies-{{ checksum "package.json" }}
           - v1-dependencies-
 
+      - run: npm i -g npm@6.1
+
       - run: npm ci
 
       - save_cache:
