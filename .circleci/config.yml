@@ -38,7 +38,7 @@ jobs:
               cp -r .circleci build/.circleci
               git config --global user.email "$GH_EMAIL"
               git config --global user.name "$GH_NAME"
-              NODE_DEBUG=gh-pages npm run deploy -- -m 'automated build'
+              NODE_DEBUG=gh-pages npm run publish -- -m 'automated build'
             else
               echo "Not master branch so not deploying"
             fi
