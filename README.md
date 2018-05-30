@@ -17,7 +17,7 @@ The build process will create a static website (only HTML, CSS and JS files) tha
 
 ### Development
 
-In order to start the development environment you can run `npm devel` (or `npm development` if you like longer commands). This will bootstrap a live-reloading development web server on port [`8000`](http://localhost:8000/).
+In order to start the development environment you can run `npm run devel` (or `npm run development` if you like longer commands). This will bootstrap a live-reloading development web server on port [`8000`](http://localhost:8000/).
 
 
 ### Production Build
