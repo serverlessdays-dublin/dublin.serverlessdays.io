@@ -1,10 +1,15 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import bg from '../images/bg/01.jpg'
+
 const Header = ({ siteTitle }) => (
   <div
     style={{
       background: 'rebeccapurple',
+      backgroundImage: `url(${bg})`,
+      backgroundSize: 'cover',
+      height: '60vh',
       marginBottom: '1.45rem',
     }}
   >

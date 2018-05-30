@@ -7,6 +7,8 @@
     "clean": "rm -rf build",
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "development": "npm run develop",
+    "start": "gatsby serve",
     "publish": "gh-pages -d public"
   },
   "repository": {
