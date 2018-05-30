@@ -20,7 +20,7 @@ The build process will create a static website (only HTML, CSS and JS files) tha
 In order to start the development environment you can run `npm devel` (or `npm development` if you like longer commands). This will bootstrap a live-reloading development web server on port [`8000`](http://localhost:8000/).
 
 
-## Production Build
+### Production Build
 
 In case you want to see how a production build looks like (which you don't really have to do, unless you are curious, because the CI will do that for you), you can run `npm run build`. This command will emit the static version of the website in the `public` folder.
 
