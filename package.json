@@ -1,45 +1,16 @@
 {
-  "name": "dublin.serverlessdays.io",
-  "version": "1.0.0",
-  "description": "Website for ServerlessDays Dublin",
+  "name": "serverless-days-dublin",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "test": "echo 'Well... we will do it live for now'",
-    "clean": "rm -rf build",
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "development": "npm run develop",
-    "start": "gatsby serve",
-    "publish": "gh-pages -d public"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/serverlessdays-dublin/dublin.serverlessdays.io.git"
-  },
-  "keywords": [
-    "Serverless",
-    "Conference",
-    "Website"
-  ],
-  "author": [
-    {
-      "name": "Luciano Mammino",
-      "email": "luciano@fullstackbulletin.com",
-      "url": "https://loige.co"
-    }
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/serverlessdays-dublin/dublin.serverlessdays.io/issues"
-  },
-  "homepage": "https://github.com/serverlessdays-dublin/dublin.serverlessdays.io#readme",
-  "devDependencies": {
-    "gh-pages": "^1.1.0"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "test": "echo 'Well well, we will do it live!'"
   },
   "dependencies": {
-    "gatsby": "^1.9.261",
-    "gatsby-link": "^1.6.44",
-    "gatsby-plugin-react-helmet": "^2.0.11",
-    "react": "^16.4.0",
-    "react-helmet": "^5.2.0"
+    "astro": "^2.0.18"
   }
 }

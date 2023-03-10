@@ -1,0 +1,38 @@
+name: Deploy
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "🛎️ Checkout"
+        uses: actions/checkout@v3
+
+      - name: "⬢ Use Node 18"
+        uses: actions/setup-node@v1
+        with:
+          node-version: 18.x
+
+      - name: Use cached node_modules
+        uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: nodeModules-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            nodeModules-
+
+      - name: "🔧 Install, test, build"
+        run: |
+          npm install
+          npm --if-present test
+          npm run build
+        env:
+          CI: true
+
+      - name: "🚀 Deploy"
+        if: github.ref == 'refs/heads/main'
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist
