@@ -2,7 +2,7 @@
 #
 # To get started with Astro see: https://docs.astro.build/en/getting-started/
 #
-name: Deploy ServerlessDays Dublin site to GitHib Pages
+name: astro-build-deploy-pages
 
 on:
   # Runs on pushes targeting the default branch
