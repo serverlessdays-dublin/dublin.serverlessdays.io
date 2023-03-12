@@ -2,7 +2,7 @@
 #
 # To get started with Astro see: https://docs.astro.build/en/getting-started/
 #
-name: astro-build-deploy-pages
+name: Build
 
 on:
   # Runs on pushes targeting the default branch
