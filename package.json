@@ -11,6 +11,6 @@
     "test": "echo 'Well well, we will do it live!'"
   },
   "dependencies": {
-    "astro": "^5.16.10"
+    "astro": "^6.0.0"
   }
 }
